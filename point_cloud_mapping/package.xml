@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>point_cloud_mapping</name>
+  <version>0.0.1</version>
+  <description>The point_cloud_mapping package</description>
+
+  <maintainer email="user@example.com">Your Name</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>tf</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>pcl_conversions</exec_depend>
+  <exec_depend>tf</exec_depend>
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>
+

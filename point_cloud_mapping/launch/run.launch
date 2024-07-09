@@ -1,0 +1,17 @@
+<launch>
+  <!-- 启动点云拼接节点 -->
+  <node name="point_cloud_mapping" pkg="point_cloud_mapping" type="point_cloud_mapping" output="screen">
+        <param name="odom_topic" value="/odometry_gt" />
+        <param name="cloud_topic" value="/velodyne_points" />
+        <param name="map_topic" value="/global_map" />
+        <param name="filter_size" value="0.4" />
+        <param name="output_pcd_file" value="/home/lhy/Pro_E/kitti_point_cloud_merge_ws/src/point_cloud_mapping/global_map.pcd" />
+        <param name="temp_dir" value="/home/lhy/Pro_E/kitti_point_cloud_merge_ws/src/point_cloud_mapping/temp_dir" />
+  </node>
+  
+    <!-- 启动RViz并加载配置文件 -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find point_cloud_mapping)/rviz/point_cloud_mapping.rviz" />
+  
+</launch>
+
+
